@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de desarrollador Full Stack">
+    <title>Portfolio Francisco Esquivel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div id="cursor" class="cursor"></div>
+
+    <!-- Fondo animado -->
+    <div id="bgAnimation" class="bg-animation"></div>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="nav-container">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / Introducción -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>
+                Transformo ideas en <br>
+                <span class="gradient-text">Experiencias digitales</span>
+            </h1>
+            <p class="subtitle">
+                Desarrollador Full Stack especializado en aplicaciones web escalables,
+                modernas y de alto rendimiento
+            </p>
+            <div class="cta-buttons">
+                <a href="#proyectos" class="cta-primary">Ver Proyectos</a>
+                <a href="#contacto" class="cta-secondary">Hablemos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="proyectos">
+        <div class="section-header">
+            <div class="section-badge">Portafolio</div>
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-description">
+                Selección de proyectos que demuestran mi experiencia en desarrollo
+            </p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <div class="project-image">🐶</div>
+                <div class="project-content">
+                    <h3 class="project-title">App accesorios de mascotas - API REST</h3>
+                    <p class="project-description">
+                        Aplicación móvil para comprar accesorios de mascotas con integración de API REST, creada con React Native y Node.js.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DeividMB1909/petstyle.git" class="project-link">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <div class="project-image">🛢️</div>
+                <div class="project-content">
+                    <h3 class="project-title">SGBD Simultáneos</h3>
+                    <p class="project-description">
+                        Página web que muestra dos sistemas de gestión de bases de datos simultáneos, con sus propios CRUD y filtros (MongoDB y SQL Server).
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">SQL Server</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1YCYBI1RlcjnXhnoK9vIzyJPIDDYu1UnQ/view?usp=sharing" class="project-link">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Habilidades -->
+<section id="habilidades">
+    <div class="section-header">
+        <div class="section-badge">Expertise</div>
+        <h2 class="section-title">Habilidades & Tecnologías</h2>
+        <p class="section-description">
+            Stack tecnológico y habilidades profesionales con los que trabajo para crear soluciones de alto impacto
+        </p>
+    </div>
+    <div class="skills-container">
+        <!-- Frontend Development -->
+        <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-item">
+                <div class="skill-name"><span>HTML5 / JavaScript</span><span>95%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 95%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>React / Next.js</span><span>95%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 95%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Tailwind CSS / CSS3  </span><span>96%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 96%"></div></div>
+            </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-item">
+                <div class="skill-name"><span>Node.js / Express</span><span>93%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 93%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>C# / PHP</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+            </div>
+        </div>
+
+        <!-- Database Management -->
+        <div class="skill-category">
+            <h3>Database Management System</h3>
+            <div class="skill-item">
+                <div class="skill-name"><span>SQL / SQL Server</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>MongoDB</span><span>88%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 88%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Oracle Database</span><span>89%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 89%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>PostgreSQL</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+            </div>
+        </div>
+
+        <!-- Herramientas y Soft Skills -->
+        <div class="skill-category">
+            <h3>Herramientas & Soft Skills</h3>
+            <div class="skill-item">
+                <div class="skill-name"><span>Git / GitHub</span><span>97%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 97%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Docker</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Postman</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Figma</span><span>88%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 88%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>IA / Herramientas Inteligencia Artificial</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+            </div>
+        
+            <div class="skill-item">
+                <div class="skill-name"><span>UI/UX Design</span><span>83%</span></div>
+                <div class="skill-bar"><div class="skill-progress" style="--progress: 83%"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="section-header">
+            <div class="section-badge">Conectemos</div>
+            <h2 class="section-title">¿Quieres comunicarte conmigo?</h2>
+            <p class="section-description">
+                Disponible para proyectos, colaboraciones, prácticas profesionales o posiciones full-time
+            </p>
+        </div>
+        <div class="contact-content">
+            <a href="mailto:2236000724@utna.edu.mx" class="cta-primary" title="Enviar correo">Enviar Correo</a>
+            <div class="social-links">
+                <a href="https://wa.me/524961416176?text=Hola%20Francisco,%20me%20gustaría%20comunicarme%20contigo" class="social-link whatsapp" target="_blank" title="WhatsApp">W</a>
+                <a href="https://www.linkedin.com/in/francisco-javier-esquivel-macias-9a89a1389" class="social-link linkedin" target="_blank" title="LinkedIn">L</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Francisco Esquivel.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
